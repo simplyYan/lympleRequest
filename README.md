@@ -11,7 +11,7 @@ Lymple is an easy-to-use tool for interacting with APIs and web servers directly
 You can use Lymple by either including the code directly in your JavaScript scripts or by saving it in a separate file and including it in your HTML.
 
 ```html
-<script src="[lymple.js](https://cdn.jsdelivr.net/gh/simplyYan/lympleRequest@main/lymple.js)"></script>
+<script src="https://cdn.jsdelivr.net/gh/simplyYan/lympleRequest@main/lymple.js"></script>
 ```
 
 ### Basic Usage
