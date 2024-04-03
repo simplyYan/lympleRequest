@@ -87,4 +87,32 @@ lymple.post('https://api.example.com/submit', data, function(response) {
 });
 ```
 
+- **GENERAL EXAMPLE**:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/gh/simplyYan/lympleRequest@main/lymple.js"></script>
+</head>
+<body>
+    <input type="text" name="nome" id="nome" placeholder="Type yout name">
+    <button onclick="send()">Send</button>
+    <script>
+        function send() {
+            var nome = document.getElementById("nome").value;
+            var data = { name: nome }
+
+            lymple.post('index.php', data, function(response) {
+                console.log(data)
+                console.log(response);
+            }, { 'Content-Type': 'application/json' });
+        }
+    </script>
+</body>
+</html>
+```
+
 With these examples, you can start using Lymple in your projects and leverage its features to enhance communication between your web application and servers.
