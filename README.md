@@ -1,6 +1,6 @@
 **Lymple**
 
-Welcome to the lympleRequest (lymple) - a lightweight JavaScript library for making GET and POST requests easily and efficiently.
+Welcome to the lympleRequest (lymple) - a lightweight JavaScript library for making GET and POST requests easily and efficiently. Communicate with your favorite back-end language, any language.
 
 ### Introduction
 
