@@ -114,5 +114,29 @@ lymple.post('https://api.example.com/submit', data, function(response) {
 </body>
 </html>
 ```
+```php
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $data = json_decode(file_get_contents("php://input"), true);
+
+    if (isset($data['name'])) {
+
+        $name = $data['name'];
+
+        echo "The name sent is: " . $name;
+    } else {
+
+        http_response_code(400);
+        echo "The 'name' field was not found in the data.";
+    }
+} else {
+
+    http_response_code(405);
+    echo "Method not allowed. Only POST requests are accepted.";
+}
+?>
+```
 
 With these examples, you can start using Lymple in your projects and leverage its features to enhance communication between your web application and servers.
